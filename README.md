@@ -14,7 +14,7 @@
 ## Installation
 
 ```bash
-
+gem install catppuccin-ruby
 ```
 
 ## Usage
