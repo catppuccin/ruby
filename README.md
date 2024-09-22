@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for <a href="https://github.com/catppuccin/template">Ruby</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -15,24 +15,11 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
 </p>
 
-## Previews
+## Installation
 
-<details>
-<summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
-</details>
-<details>
-<summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
-</details>
-<details>
-<summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
-</details>
-<details>
-<summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
-</details>
+```bash
+
+```
 
 ## Usage
 
@@ -41,20 +28,24 @@
 palette = Catppuccin::Palette.get(:latte, :red, :rgb)
 puts palette # Output: rgb(210, 15, 57)
 
-palette = Catppuccin::Palette.get(:frappe, :blue, :hex)
-puts palette # Output: #1e66f5
+palette = Catppuccin::Palette.get(:frappe, :blue)
+puts palette # Output: #8caaee, rgb(140, 170, 238), hsl(222deg, 74%, 74%)
+
+palette = Catppuccin::Palette.get(:mocha)
+puts palette
+# Output:
+# Mocha:
+# rosewater: #f5e0dc, rgb(245, 224, 220), hsl(10deg, 56%, 91%)
+# flamingo: #f2cdcd, rgb(242, 205, 205), hsl(0deg, 59%, 88%)
+# ...
+
+palette = Catppuccin::Palette.random_color(:macchiato)
+puts palette # Output: random color
 ```
-
-<!-- The FAQ section is optional. Remove if needed.-->
-
-## 🙋 FAQ
-
-- Q: **_"How can I do X?"_**\
-  A: ...
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [Human](https://github.com/acm-wq)
 
 &nbsp;
 
