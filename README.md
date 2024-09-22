@@ -36,11 +36,17 @@
 
 ## Usage
 
-1. Download the flavor of your choice.
-2. Open the app and go to **Preferences** > **Appearance** > **Import theme**.
-3. Select the downloaded flavor file.
+```ruby
+# Example usage:
+palette = Catppuccin::Palette.get(:latte, :red, :rgb)
+puts palette # Output: rgb(210, 15, 57)
+
+palette = Catppuccin::Palette.get(:frappe, :blue, :hex)
+puts palette # Output: #1e66f5
+```
 
 <!-- The FAQ section is optional. Remove if needed.-->
+
 ## 🙋 FAQ
 
 - Q: **_"How can I do X?"_**\
