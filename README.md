@@ -11,10 +11,6 @@
 	<a href="https://github.com/catppuccin/template/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-<p align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
-</p>
-
 ## Installation
 
 ```bash
@@ -45,7 +41,7 @@ puts palette # Output: random color
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/acm-wq)
+- [acm-wq](https://github.com/acm-wq)
 
 &nbsp;
 
