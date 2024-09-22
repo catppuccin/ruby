@@ -21,6 +21,8 @@ gem install catppuccin-ruby
 
 ```ruby
 # Example usage:
+require("catppuccin_ruby")
+
 palette = Catppuccin::Palette.get(:latte, :red, :rgb)
 puts palette # Output: rgb(210, 15, 57)
 
