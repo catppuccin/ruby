@@ -14,29 +14,30 @@
 ## Installation
 
 ```bash
-gem install catppuccin-ruby
+gem install catppuccin
 ```
 
 ## Usage
 
 ```ruby
-# Example usage:
-palette = Catppuccin::Palette.get(:latte, :red, :rgb)
-puts palette # Output: rgb(210, 15, 57)
+require 'catppuccin'
 
-palette = Catppuccin::Palette.get(:frappe, :blue)
-puts palette # Output: #8caaee, rgb(140, 170, 238), hsl(222deg, 74%, 74%)
+palette = Catppuccin::Palette.new
 
-palette = Catppuccin::Palette.get(:mocha)
-puts palette
-# Output:
-# Mocha:
-# rosewater: #f5e0dc, rgb(245, 224, 220), hsl(10deg, 56%, 91%)
-# flamingo: #f2cdcd, rgb(242, 205, 205), hsl(0deg, 59%, 88%)
-# ...
+# Get hex color
+puts palette.color_hex(:latte, :red) # Output: #d20f39
 
-palette = Catppuccin::Palette.random_color(:macchiato)
-puts palette # Output: random color
+# Get RGB color as a string
+puts palette.color_rgb_string(:frappe, :blue) # Output: rgb(140, 170, 238)
+
+# Get RGB color as a hash
+puts palette.color_rgb(:mocha, :text) # Output: { r: 205, g: 214, b: 244 }
+
+# List all themes
+puts palette.list_themes # Output: [:latte, :frappe, :macchiato, :mocha]
+
+# List all colors for a theme
+puts palette.list_colors(:macchiato) # Output: [:rosewater, :flamingo, :pink, :mauve, :red, :maroon, :peach, :yellow, :green, :teal, :sky, :sapphire, :blue, :lavender, :text, :subtext1, :subtext0, :overlay2, :overlay1, :overlay0, :surface2, :surface1, :surface0, :base, :mantle, :crust]
 ```
 
 ## 💝 Thanks to
