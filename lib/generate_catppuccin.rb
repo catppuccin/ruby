@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 
 PALETTE_JSON_PATH = File.join(__dir__, 'palette.json')
